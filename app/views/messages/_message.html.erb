@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-block">
+        <div class="col-md-1">
+            <%= gravatar_for message.user%>
+        </div>
+        <div class="col-md-11">
+            <p class="card-text">
+                <span class="text-muted"><%= message.user.name %> a las <%= message.timestamp%> dice </span><br>
+                <%= message.body %>
+            </p>
+        </div>
+    </div>
+</div>

@@ -22,6 +22,9 @@ class ChatRoomsController < ApplicationController
         params.require(:chat_room).permit(:title)
     end
     
+    def show
+        @chat_room = ChatRoom.includes(:messages).find_by(id: params[:id])
+    end
     
     
 end
