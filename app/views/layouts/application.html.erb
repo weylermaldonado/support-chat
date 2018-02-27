@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ChatRoom</title>
-    <%= csrf_meta_tags %>
+<head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <title>Wascop App</title>
+  <%= csrf_meta_tags %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+
+<nav class="nav-wrapper navigation-bar">
+  <%= link_to 'Wascop App', root_path, class: 'brand-logo' %>
+
+  <% if user_signed_in? %>
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <span>Bienvenido <strong><%= current_user.name %></strong></span>
+      </li>
+      <li class="active">
+        <%= link_to 'Log out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+      </li>
+    </ul>
+  <% end %>
+</nav>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+<footer>
+</footer>
+</body>
 </html>

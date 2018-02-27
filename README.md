@@ -1,24 +1,33 @@
-# README
+# Wascop App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## A chat room project of subject Distributed Systems
 
-Things you may want to cover:
+Build by:
+* Weyler Maldonado
+* Maydali Villanueva
+* José May
 
-* Ruby version
+## How does it work?
 
-* System dependencies
+First, you need to login by e-mail and choose a password. Then, you can create a chat room or enter one; you can choose a avatar, and many things more.
 
-* Configuration
+## What I need?
 
-* Database creation
+This app was made using
+* Ruby on Rails 5
+* Devis 
+* Redis
+* Bootstrap 4
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To run, make a bundle
+```bash
+$ bundle install
+```
+and migrate the database
+```bash
+$ rails db:migrate
+```
+then you can wake the server
+```bash
+$ rails s
+```
