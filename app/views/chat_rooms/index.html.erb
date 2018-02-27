@@ -1,7 +1,13 @@
-<h1>Salas de chat</h1>
+<div class="row">
+    <div class="col s6">
+      <h1>Salas de chat</h1>
+      <p class="lead"><%= link_to 'Nueva sala de chat', new_chat_room_path, class: 'btn btn-primary' %></p>
+    </div>
 
-<p class="lead"><%= link_to 'New chat room', new_chat_room_path, class: 'btn btn-primary' %></p>
-
-<ul>
-  <%= render @chat_rooms %>
-</ul>
+    <div class="col s6">
+    <h3>Tópicos</h3>
+      <ul>
+        <%= render @chat_rooms %>
+      </ul>
+    </div>
+</div>
