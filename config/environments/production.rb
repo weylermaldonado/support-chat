@@ -86,8 +86,14 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_cable.allowed_request_origins = ['https://sitepoint-actioncable.herokuapp.com',
-                                                 'http://sitepoint-actioncable.herokuapp.com']
+  config.action_cable.allowed_request_origins = ['https://wascop-app.herokuapp.com',
+                                                 'http://wascop-app.herokuapp.com']
 
-  config.action_cable.url = "wss://sitepoint-actioncable.herokuapp.com/cable"
+  config.action_cable.url = "wss://wascop-app.herokuapp.com/cable"
+  #gmail config
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+    api_key: '',
+    domain: ''
+  }
 end
