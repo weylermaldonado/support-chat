@@ -210,7 +210,7 @@ DEPENDENCIES
   jquery-rails
   mailgun_rails
   materialize-sass
-  pg
+  pg (~> 0.18)
   pry-rails
   puma (~> 3.0)
   rails (>= 5.0.0.rc1, < 5.1)
