@@ -26,6 +26,8 @@ gem 'devise'
 
 gem 'mailgun_rails'
 
+gem 'rake', '~> 12.3'
+
 group :development do
   gem 'sqlite3'
   gem 'pry-rails'
