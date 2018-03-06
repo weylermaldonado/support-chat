@@ -91,9 +91,5 @@ Rails.application.configure do
 
   config.action_cable.url = "wss://wascop-app.herokuapp.com/cable"
   #gmail config
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
-    api_key: '',
-    domain: ''
-  }
+  #
 end
