@@ -5,15 +5,16 @@
 }
 
 .navigation-bar{
-  background-color: white;
-  color: orange;
+  background-color: orange;
+  color: white;
 }
 .navbar-brand {
   font-size: 25px;
     
 }
 nav .brand-logo {
-  color: orange;
+  color: white;
+  text-decoration: none;
 }
 body {
   font-family: Arial;
@@ -46,4 +47,17 @@ footer {
 
 .log-in {
   max-width: 40%;
+}
+
+.card-content {
+  background-color: orange;
+
+}
+.devise-links > a{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+.input-field {
+  color: white;
 }

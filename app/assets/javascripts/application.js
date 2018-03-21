@@ -15,4 +15,4 @@
 //= require cable
 //= require turbolinks
 //= require materialize-sprockets
-//= require toastr
+
